@@ -12,5 +12,11 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  server: {
+    mimeTypes: {
+      'js': 'application/javascript',
+      'css': 'text/css',
+    },
+  },
 })
